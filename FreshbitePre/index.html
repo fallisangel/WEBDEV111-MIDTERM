@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>🥬FreshBite Prep</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#" class="nav-logo">
+        <h2 class="logo-text">🥬 FreshBite Prep</h2>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Meals</a></li>
+        <li><a href="#" class="nav-link">Plan</a></li>
+        <li><a href="nutrient.html" class="nav-link">Nutrients</a></li>
+        <li><a href="billing.html" class="nav-link">Billing</a></li>
+        <li>
+          <a href="#" class="nav-link account-btn" id="openDrawerBtn">
+            <i class="fas fa-user"></i> Account
+          </a>
+        </li>
+      </ul>
+      <button id="menu-open-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="section-content">
+        <div class="hero-inner">
+
+          <div class="hero-details">
+            <h1>Welcome to FreshBite Prep 🥬</h1>
+            <p>Healthy meal prep made simple. Explore our fresh gallery and read nutrition details for every dish.</p>
+            <a href="#gallery" class="hero-btn">Browse Meals ↓</a>
+          </div>
+          <div class="hero-image-wrapper">
+            <img src="img/header.png" alt="Featured meal" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="section-content">
+        <h2 class="section-title">Meal Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-card">
+            <img src="img/meal4.jpg" alt="Caesar Salad Wrap" />
+            <div class="card-info">
+              <h3>Caesar Salad Wrap</h3>
+              <p>A fresh wrap filled with romaine, parmesan, and grilled chicken.</p>
+              <button class="read-btn">🥬 Read Nutrients</button>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <img src="img/meal3.jpg " alt="Salad Caesar Bowl" />
+            <div class="card-info">
+              <h3>Salad Caesar Bowl</h3>
+              <p>Classic Caesar served as a power bowl with whole grain croutons.</p>
+              <button class="read-btn">🥬 Read Nutrients</button>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <img src="img/meal6.jpg" alt="Egg Chicken Sweet Potato" />
+            <div class="card-info">
+              <h3>Egg, Chicken & Sweet Potato</h3>
+              <p>High-protein meal prep favorite with balanced macros.</p>
+              <button class="read-btn">🥬 Read Nutrients</button>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <img src="img/meal5.jpg" alt="bibimbap" />
+            <div class="card-info">
+              <h3>Veg bibimbap with cauliflower rice</h3>
+              <p>Veggie with bibimbap and slices carrots with cauliflower rice.</p>
+              <button class="read-btn">🥬 Read Nutrients</button>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <img src="img/meal1.jpg" alt="Udon" />
+            <div class="card-info">
+              <h3>Vegan Udon</h3>
+              <p>Thick chewy noodles in a savory plant-based broth, topped with tofu, mushrooms, and fresh green onions.</p>
+              <button class="read-btn">🥬 Read Nutrients</button>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <img src="img/meal2.jpg" alt="Gyoza" />
+            <div class="card-info">
+              <h3>Konjac noodles with broccoli, spinach, and shrimp gyoza</h3>
+              <p>Light konjac noodles tossed with crisp broccoli and wilted spinach, served alongside pan-fried shrimp gyoza.</p>
+              <button class="read-btn">🥬 Read Nutrients</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>FreshBite Prep</p>
+  </footer>
+  <div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+  <div class="login-drawer" id="loginDrawer">
+    <div class="drawer-header">
+      <h2>Sign In</h2>
+      <button class="close-drawer-btn" onclick="closeDrawer()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div>
+      <label for="emailInput">Email Address</label>
+      <input type="email" id="emailInput" placeholder="you@example.com" />
+
+      <label for="passwordInput">Password</label>
+      <input type="password" id="passwordInput" placeholder="Enter your password" />
+
+      <button class="signin-btn">Sign In</button>
+    </div>
+
+    <div class="drawer-footer">
+      <p>Don't have an account? <a href="#">Sign Up</a></p>
+      <p style="margin-top:8px"><a href="#">Forgot password?</a></p>
+    </div>
+
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>

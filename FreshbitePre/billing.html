@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Billing | FreshBite Prep</title>
+
+  
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">
+        <h2 class="logo-text">🥬 FreshBite Prep</h2>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Meals</a></li>
+        <li><a href="#" class="nav-link">Plan</a></li>
+        <li><a href="nutrient.html" class="nav-link">Nutrients</a></li>
+        <li><a href="billing.html" class="nav-link">Billing</a></li>
+        <li>
+          <a href="#" class="nav-link account-btn" id="openDrawerBtn">
+            <i class="fas fa-user"></i> Account
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="page-hero">
+    <div class="section-content">
+      <h1>Meal Plan Pricing</h1>
+      <p>Choose a plan that fits your lifestyle and budget.</p>
+    </div>
+  </section>
+  <section class="billing-section">
+    <div class="section-content">
+      <div class="plans-grid">
+        <div class="plan-card">
+          <div class="plan-name">Basic</div>
+          <div class="plan-price">₱300</div>
+          <div class="plan-period">per week</div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> 5 meals per week</li>
+            <li><i class="fas fa-check"></i> 1 person</li>
+            <li><i class="fas fa-check"></i> Standard meals</li>
+            <li><i class="fas fa-check"></i> Nutrient info included</li>
+            <li><i class="fas fa-check"></i> Email support</li>
+          </ul>
+          <button class="plan-btn">Select Basic</button>
+        </div>
+        <div class="plan-card featured">
+          <div class="plan-name">Standard</div>
+          <div class="plan-badge">⭐ Most Popular</div>
+          <div class="plan-price">₱500</div>
+          <div class="plan-period">per week</div>
+          <ul class="plan-features">
+            <li><i class="fas fa-check"></i> 10 meals per week</li>
+            <li><i class="fas fa-check"></i> Up to 2 people</li>
+            <li><i class="fas fa-check"></i> Premium meals</li>
+            <li><i class="fas fa-check"></i> Full nutrient breakdown</li>
+            <li><i class="fas fa-check"></i> Priority support</li>
+          </ul>
+          <button class="plan-btn">Select Standard</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>FreshBite Prep</p>
+  </footer>
+  <div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+  <div class="login-drawer" id="loginDrawer">
+    <div class="drawer-header">
+      <h2>Sign In</h2>
+      <button class="close-drawer-btn" onclick="closeDrawer()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div>
+      <label for="emailInput">Email Address</label>
+      <input type="email" id="emailInput" placeholder="you@example.com" />
+      <label for="passwordInput">Password</label>
+      <input type="password" id="passwordInput" placeholder="Enter your password" />
+      <button class="signin-btn">Sign In</button>
+    </div>
+    <div class="drawer-footer">
+      <p>Don't have an account? <a href="#">Sign Up</a></p>
+      <p style="margin-top:8px"><a href="#">Forgot password?</a></p>
+    </div>
+  </div>
+   <script src="script.js" defer></script>
+</body>
+</html>
