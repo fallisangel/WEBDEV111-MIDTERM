@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Luna Vista</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">Luna Vista</div>
+        <ul class="nav-link">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="suite.html">Suite</a></li>
+            <li class="link"><a href="gallery.html">Gallery</a></li>
+            <li class="link"><a href="">Price</a></li>
+        </ul>
+    </nav>
+
+    <header class="section-container header-container">
+        <div class="header-image-container">
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="carousel-slide" style="background-image: url(img/header.jpg)"></div>
+                    <div class="carousel-slide" style="background-image: url(img/suite.jpg)"></div>
+                    <div class="carousel-slide" style="background-image: url(img/suite2.jpg)"></div>
+                    <div class="carousel-slide" style="background-image: url(img/suite3.jpg)"></div>
+                    <div class="carousel-slide" style="background-image: url(img/suite4.jpg)"></div>
+                </div>
+                <button class="carousel-btn prev">&#10094;</button>
+                <button class="carousel-btn next">&#10095;</button>
+                <div class="carousel-dots">
+                   <div class="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-content">
+                <h1>Enjoy your stay</h1>
+                <p>Book Rooms with your prefer suite.</p>
+            </div>
+
+            <div class="book-container">
+                <form>
+                    <div class="form-container">
+                        <div class="input-container">
+                            <input type="date" id="checkin">
+                            <label>Check In</label>
+                        </div>
+                        <p>Add date</p>
+                    </div>
+                    <div class="form-container">
+                        <div class="input-container">
+                            <input type="date" id="checkout">
+                            <label>Check Out</label>
+                        </div>
+                        <p>Add date</p>
+                    </div>
+                    <div class="form-container">
+                        <div class="input-container">
+                            <input type="text">
+                            <label>Guests</label>
+                        </div>
+                        <p>Add guests</p>
+                    </div>
+                    <div class="form-container">
+                        <div class="input-container">
+                            <button type="button" class="book-btn">Book now</button>
+                        </div>
+                        <p>Proceed your book</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>
