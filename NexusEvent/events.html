@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Events | Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="events">
+
+  <header class="site-header">
+    <div class="navbar">
+      <a class="brand" href="index.html">NEXUS EVENTS</a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="events.html" data-nav="events">Events</a>
+        <a href="tickets.html" data-nav="tickets">Tickets</a>
+        <a href="venue.html" data-nav="venue">Venue</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+        <a href="admin-login.html" data-nav="admin">Admin</a>
+      </nav>
+      <button class="btn btn-ghost" type="button" data-party-toggle>Party Mode: OFF</button>
+    </div>
+  </header>
+
+  <main class="container page-main">
+
+    <div class="photo-banner">
+      <img class="photo-banner-img" src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&q=80" alt="Rock concert crowd">
+      <div class="photo-banner-text">
+        <h1>Events Calendar</h1>
+        <p>🎸 Rock Season 2026 — Nexus Hall, Main Stage</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="filter-bar">
+        <input type="text" placeholder="Search by band or vibe..." data-search>
+        <div class="filter-buttons">
+          <button type="button" class="active" data-filter="all">All</button>
+          <button type="button" data-filter="rock">Rock</button>
+          <button type="button" data-filter="pop-rock">Pop Rock</button>
+          <button type="button" data-filter="reggae">Reggae Rock</button>
+          <button type="button" data-filter="workshop">Workshop</button>
+        </div>
+      </div>
+
+      <div class="auto-grid">
+        <article class="card" data-event-card data-tags="rock alt-rock incubus">
+          <img class="card-img" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500&q=80" alt="Incubus live">
+          <span class="badge">May 16</span>
+          <h3>Incubus — Make Yourself Tour</h3>
+          <p>Alt-rock icons return with full production. Deep cuts, crowd surfers, and Brandon Boyd in full force.</p>
+          <div class="tag-row">
+            <span class="tag">Rock</span>
+            <span class="tag">Alt Rock</span>
+          </div>
+          <a class="btn btn-ghost" href="tickets.html">Tickets</a>
+        </article>
+
+        <article class="card" data-event-card data-tags="reggae rock 311">
+          <img class="card-img" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=500&q=80" alt="311 concert">
+          <span class="badge badge-cyan">May 23</span>
+          <h3>311 — Unity Vibration Night</h3>
+          <p>Reggae grooves, rock riffs, and the most unified crowd in the building. Pure positive energy.</p>
+          <div class="tag-row">
+            <span class="tag">Reggae Rock</span>
+            <span class="tag">Groove</span>
+          </div>
+          <a class="btn btn-ghost" href="tickets.html">Tickets</a>
+        </article>
+
+        <article class="card" data-event-card data-tags="pop-rock boys like girls">
+          <img class="card-img" src="https://images.unsplash.com/photo-1501612780327-45045538702b?w=500&q=80" alt="Boys Like Girls concert">
+          <span class="badge badge-yellow">May 30</span>
+          <h3>Boys Like Girls — Anthem Night</h3>
+          <p>Heart on Fire, The Great Escape, and a set list built for mass singalongs. Pop rock with heart.</p>
+          <div class="tag-row">
+            <span class="tag">Pop Rock</span>
+            <span class="tag">Anthems</span>
+          </div>
+          <a class="btn btn-ghost" href="tickets.html">Tickets</a>
+        </article>
+
+        <article class="card" data-event-card data-tags="workshop studio">
+          <img class="card-img" src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=500&q=80" alt="Music studio workshop">
+          <span class="badge">Jun 7</span>
+          <h3>Soundcheck: Guitar Tone Workshop</h3>
+          <p>Learn live sound design, pedalboard setups, and stage tone from touring engineers. Hands-on.</p>
+          <div class="tag-row">
+            <span class="tag">Workshop</span>
+            <span class="tag">Guitar</span>
+          </div>
+          <a class="btn btn-ghost" href="tickets.html">Reserve</a>
+        </article>
+
+        <article class="card" data-event-card data-tags="rock meetup rooftop">
+          <img class="card-img" src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=500&q=80" alt="Rooftop rock session">
+          <span class="badge">Jun 14</span>
+          <h3>Rooftop Rock Sessions</h3>
+          <p>Acoustic sets, open-air stage, and sunset views. Local bands, cool vibes, cold drinks.</p>
+          <div class="tag-row">
+            <span class="tag">Rock</span>
+            <span class="tag">Acoustic</span>
+          </div>
+          <a class="btn btn-ghost" href="tickets.html">RSVP</a>
+        </article>
+
+        <article class="card" data-event-card data-tags="market merch">
+          <img class="card-img" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&q=80" alt="Band merch pop-up">
+          <span class="badge badge-yellow">Jun 21</span>
+          <h3>Rock Merch Pop-Up Arcade</h3>
+          <p>Limited band collabs, vintage tees, and custom print-on-site gear for all three headliners.</p>
+          <div class="tag-row">
+            <span class="tag">Market</span>
+            <span class="tag">Style</span>
+          </div>
+          <a class="btn btn-ghost" href="tickets.html">Tickets</a>
+        </article>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="pill">Nexus Events · Rock Season 2026</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

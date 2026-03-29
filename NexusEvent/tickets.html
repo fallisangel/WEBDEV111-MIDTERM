@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Events | Tickets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="tickets">
+
+  <header class="site-header">
+    <div class="navbar">
+      <a class="brand" href="index.html">NEXUS EVENTS</a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="events.html" data-nav="events">Events</a>
+        <a href="tickets.html" data-nav="tickets">Tickets</a>
+        <a href="venue.html" data-nav="venue">Venue</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+        <a href="admin-login.html" data-nav="admin">Admin</a>
+      </nav>
+      <button class="btn btn-ghost" type="button" data-party-toggle>Party Mode: OFF</button>
+    </div>
+  </header>
+
+  <main class="container page-main">
+
+    <div class="photo-banner">
+      <img class="photo-banner-img" src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=1200&q=80" alt="Concert crowd">
+      <div class="photo-banner-text">
+        <h1>Tickets & Access</h1>
+        <p>🎸 Rock Season 2026 — Choose your pass. Own your night.</p>
+      </div>
+    </div>
+
+    <div class="auto-grid mb-2">
+      <article class="card">
+        <span class="badge">Starter</span>
+        <h3>Pulse Pass</h3>
+        <p>General entry, standing zone, and merch lane access. Feel the pit energy up close.</p>
+        <p class="price-display">$45</p>
+        <a class="btn btn-ghost" href="contact.html">Ask for Group Rates</a>
+      </article>
+      <article class="card card-featured">
+        <span class="badge badge-yellow">Most Popular</span>
+        <h3>Glow Pass</h3>
+        <p>Priority entry, lounge access, 1 drink ticket, and early soundcheck viewing.</p>
+        <p class="price-display">$85</p>
+        <a class="btn" href="contact.html">Ask for Group Rates</a>
+      </article>
+      <article class="card">
+        <span class="badge badge-cyan">VIP</span>
+        <h3>Orbit Pass</h3>
+        <p>Balcony seating, backstage tour, band meet & greet eligibility, and event photo pack.</p>
+        <p class="price-display">$140</p>
+        <a class="btn btn-ghost" href="contact.html">Ask for Group Rates</a>
+      </article>
+    </div>
+    <div class="panel">
+      <h2 class="section-title">Quick Ticket Builder</h2>
+
+      <div class="ticket-row" data-ticket-row data-price="45">
+        <div>
+          <p class="ticket-row-name">Pulse Pass</p>
+          <p class="ticket-row-desc">Entry + merch lane + standing zone</p>
+        </div>
+        <div class="qty-control">
+          <button type="button" data-qty-minus>−</button>
+          <input type="text" value="0" data-qty>
+          <button type="button" data-qty-plus>+</button>
+        </div>
+        <p class="ticket-row-price">$45 each</p>
+      </div>
+
+      <div class="ticket-row" data-ticket-row data-price="85">
+        <div>
+          <p class="ticket-row-name">Glow Pass</p>
+          <p class="ticket-row-desc">Priority entry + lounge + 1 drink</p>
+        </div>
+        <div class="qty-control">
+          <button type="button" data-qty-minus>−</button>
+          <input type="text" value="0" data-qty>
+          <button type="button" data-qty-plus>+</button>
+        </div>
+        <p class="ticket-row-price">$85 each</p>
+      </div>
+
+      <div class="ticket-row" data-ticket-row data-price="140">
+        <div>
+          <p class="ticket-row-name">Orbit Pass</p>
+          <p class="ticket-row-desc">Balcony + backstage + photo pack</p>
+        </div>
+        <div class="qty-control">
+          <button type="button" data-qty-minus>−</button>
+          <input type="text" value="0" data-qty>
+          <button type="button" data-qty-plus>+</button>
+        </div>
+        <p class="ticket-row-price">$140 each</p>
+      </div>
+
+      <p class="total-box">Total: <span data-total>$0</span></p>
+      <div class="payment-section">
+        <p class="payment-label">Select Payment Method</p>
+        <div class="payment-grid">
+          <div class="pay-method" data-pay="visa" tabindex="0">
+            <span class="pay-icon"></span>
+            <span>Visa</span>
+          </div>
+          <div class="pay-method" data-pay="mastercard" tabindex="0">
+            <span class="pay-icon"></span>
+            <span>Mastercard</span>
+          </div>
+          <div class="pay-method" data-pay="amex" tabindex="0">
+            <span class="pay-icon"></span>
+            <span>Amex</span>
+          </div>
+          <div class="pay-method" data-pay="paypal" tabindex="0">
+            <span class="pay-icon"></span>
+            <span>PayPal</span>
+          </div>
+          <div class="pay-method" data-pay="gcash" tabindex="0">
+            <span class="pay-icon"></span>
+            <span>GCash</span>
+          </div>
+          <div class="pay-method" data-pay="maya" tabindex="0">
+            <span class="pay-icon"></span>
+            <span>Maya</span>
+          </div>
+        </div>
+        <p class="pay-selected-msg" id="pay-selected-msg"></p>
+      </div>
+
+      <button class="btn btn-big btn-full mt-2" type="button" id="checkout-btn">Proceed to Checkout</button>
+      <p class="checkout-note">🔒 Secure checkout. All transactions are encrypted.</p>
+    </div>
+
+    <section class="mt-4">
+      <h2 class="section-title">🎸 The <span class="accent">Shows</span></h2>
+      <div class="auto-grid">
+        <article class="card">
+          <img class="card-img" src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=500&q=80" alt="Incubus concert">
+          <span class="badge">May 16</span>
+          <h3>Incubus Night</h3>
+          <p>Main Hall. Full production lights and sound. Seats filling up fast.</p>
+          <a class="btn btn-ghost" href="events.html">See Details</a>
+        </article>
+        <article class="card">
+          <img class="card-img" src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=500&q=80" alt="311 show">
+          <span class="badge badge-cyan">May 23</span>
+          <h3>311 Night</h3>
+          <p>Rooftop and Main Hall both open. Unity vibes all night long.</p>
+          <a class="btn btn-ghost" href="events.html">See Details</a>
+        </article>
+        <article class="card">
+          <img class="card-img" src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=500&q=80" alt="Boys Like Girls">
+          <span class="badge badge-yellow">May 30</span>
+          <h3>Boys Like Girls Night</h3>
+          <p>Pop rock anthems and a crowd that will shout every lyric back.</p>
+          <a class="btn btn-ghost" href="events.html">See Details</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="mt-4">
+      <h2 class="section-title">FAQ</h2>
+      <div class="accordion" data-accordion>
+        <div class="accordion-item open">
+          <button type="button">What is included with a ticket?</button>
+          <div class="acc-content">Every ticket includes venue entry and the full Nexus rock experience. Glow and Orbit passes add lounge perks, drink tickets, and exclusive backstage access.</div>
+        </div>
+        <div class="accordion-item">
+          <button type="button">Can I transfer my ticket?</button>
+          <div class="acc-content">Yes. Tickets can be transferred up to 6 hours before doors open. Contact our support crew with your order reference.</div>
+        </div>
+        <div class="accordion-item">
+          <button type="button">Do you offer group discounts?</button>
+          <div class="acc-content">Groups of 8 or more get custom bundles. Hit us up on the contact page for a quick quote and dedicated group entry lanes.</div>
+        </div>
+        <div class="accordion-item">
+          <button type="button">Which payment methods are accepted?</button>
+          <div class="acc-content">We accept Visa, Mastercard, American Express, PayPal, GCash, and Maya. All payments are SSL-encrypted and processed securely.</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="pill">Nexus Events · Tickets Desk</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+  <script src="tickets.js" defer></script>
+</body>
+</html>
