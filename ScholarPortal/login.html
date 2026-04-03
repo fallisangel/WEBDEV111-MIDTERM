@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholar Portal - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Scholar<span>Portal</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Courses</a></li>
+            <li><a href="transcript.html">Transcript</a></li>
+            <li><a href="login.html" class="btn-login active">Login / Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="auth-page">
+        <div class="auth-box">
+
+            <h2>Welcome to Scholar Portal</h2>
+            <p class="subtitle">Log in with your Student ID or create a new account.</p>
+
+            <div class="tabs">
+                <button class="active" id="tab-login">Login</button>
+                <button id="tab-register">Register</button>
+            </div>
+
+            <div id="login-form">
+                <div class="form-group">
+                    <label for="login-id">Student ID</label>
+                    <input type="text" id="login-id" placeholder="e.g. 2026-00125">
+                    <span class="error-msg" id="login-id-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter your password">
+                    <span class="error-msg" id="login-password-error"></span>
+                </div>
+
+                <button class="btn-submit" id="login-btn">Login</button>
+
+                <div class="success-msg" id="login-success"></div>
+            </div>
+
+            <div id="register-form" style="display:none;">
+
+                <div class="form-group">
+                    <label for="reg-firstname">First Name</label>
+                    <input type="text" id="reg-firstname" placeholder="Juan">
+                    <span class="error-msg" id="reg-firstname-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-lastname">Last Name</label>
+                    <input type="text" id="reg-lastname" placeholder="Dela Cruz">
+                    <span class="error-msg" id="reg-lastname-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-id">Student ID</label>
+                    <input type="text" id="reg-id" placeholder="e.g. 2024-00456">
+                    <span class="error-msg" id="reg-id-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-email">Email Address</label>
+                    <input type="email" id="reg-email" placeholder="juan@school.edu.ph">
+                    <span class="error-msg" id="reg-email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" placeholder="At least 6 characters">
+                    <span class="error-msg" id="reg-password-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-confirm">Confirm Password</label>
+                    <input type="password" id="reg-confirm" placeholder="Repeat your password">
+                    <span class="error-msg" id="reg-confirm-error"></span>
+                </div>
+
+                <button class="btn-submit" id="register-btn">Create Account</button>
+
+                <div class="success-msg" id="register-success"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+          ScholarPortal - shinchansystemschool 2026
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

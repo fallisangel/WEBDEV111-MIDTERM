@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholar Portal - Courses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Scholar<span>Portal</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Courses</a></li>
+            <li><a href="transcript.html">Transcript</a></li>
+            <li><a href="login.html" class="btn-login">Login / Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>Course Catalog</h1>
+        <p>Browse and add courses to your semester</p>
+    </div>
+
+    <div class="container">
+
+        <div class="info-cards">
+            <div class="card">
+                <h3>Total Courses</h3>
+                <div class="number">12</div>
+            </div>
+            <div class="card">
+                <h3>Departments</h3>
+                <div class="number">4</div>
+            </div>
+            <div class="card">
+                <h3>Available Slots</h3>
+                <div class="number">148</div>
+            </div>
+        </div>
+
+        <div class="notice">
+            Enrollment is open for 2nd Semester, AY 2025-2026. Add courses below and pay fees before the deadline.
+        </div>
+        <p class="section-title">Available Courses</p>
+
+        <div class="course-grid">
+
+            <div class="course-card">
+                <div class="tab tab-yellow">Information Technology</div>
+                <div class="course-body">
+                    <h3>INPR</h3>
+                    <p>Programming.</p>
+                    <div class="course-meta">
+                        <span>3 Units</span>
+                        <span>MWF 7:30am</span>
+                    </div>
+                    <button class="btn-add" data-name="Introduction to Programming" data-units="3" data-fee="3500">+ Add to Semester</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="tab tab-blue">CRWT</div>
+                <div class="course-body">
+                    <h3>CRWT</h3>
+                    <p>Critical Reading Writing Think</p>
+                    <div class="course-meta">
+                        <span>4 Units</span>
+                        <span>TTH 9:00am</span>
+                    </div>
+                    <button class="btn-add" data-name="Critical Reading Writing Thinking" data-units="4" data-fee="4200">+ Add to Semester</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="tab tab-green">PCDL</div>
+                <div class="course-body">
+                    <h3>PCDL</h3>
+                    <p>Digital Logic.</p>
+                    <div class="course-meta">
+                        <span>5 Units</span>
+                        <span>MWF 10:00am</span>
+                    </div>
+                    <button class="btn-add" data-name="Digital Logic" data-units="5" data-fee="5000">+ Add to Semester</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="tab tab-pink">Literature</div>
+                <div class="course-body">
+                    <h3>Purposive Communication</h3>
+                    <p>Academic writing, oral communication, and research skills development.</p>
+                    <div class="course-meta">
+                        <span>3 Units</span>
+                        <span>TTH 1:00pm</span>
+                    </div>
+                    <button class="btn-add" data-name="Purposive Communication" data-units="3" data-fee="3000">+ Add to Semester</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="tab tab-yellow">Information Technology</div>
+                <div class="course-body">
+                    <h3>Data Structures</h3>
+                    <p>Arrays, linked lists, stacks, queues, trees, and sorting algorithms.</p>
+                    <div class="course-meta">
+                        <span>3 Units</span>
+                        <span>MWF 1:00pm</span>
+                    </div>
+                    <button class="btn-add" data-name="Data Structures" data-units="3" data-fee="3500">+ Add to Semester</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="tab tab-blue">MATHM</div>
+                <div class="course-body">
+                    <h3>Discrete Mathematics</h3>
+                    <p>Logic, sets, combinatorics, and graph theory for computing students.</p>
+                    <div class="course-meta">
+                        <span>3 Units</span>
+                        <span>TTh 7:30am</span>
+                    </div>
+                    <button class="btn-add" data-name="Discrete Mathematics" data-units="3" data-fee="3200">+ Add to Semester</button>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="section-title">My Semester</p>
+
+        <div class="semester-box">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Units</th>
+                        <th>Fee</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="semester-list">
+                </tbody>
+            </table>
+            <p id="semester-empty" style="color:#888; font-size:0.88rem; margin-top:12px;">No courses added yet. Click "+ Add to Semester" above.</p>
+
+            <div class="total-row">
+                <strong>Total Fee: <span id="semester-total">Php 0</span></strong>
+                <button class="btn-pay" id="pay-btn">Pay Fees →</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        ScholarPortal - shinchansystemschool 2026
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
