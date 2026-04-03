@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthSync Clinic</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-block">
+      <div class="brand-mark">HS</div>
+      <div>
+        <p class="eyebrow">Clinic Management System</p>
+        <h1>HealthSync Clinic</h1>
+      </div>
+    </div>
+    <nav class="topnav">
+      <a href="#wizard">Wizard</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section class="hero card">
+      <div class="hero-copy">
+        <p class="eyebrow">Modern, clean, mobile-first</p>
+        <h2>Appointment booking without the usual form fatigue.</h2>
+        <p class="hero-text">
+          Patients move through one clear question at a time: select a specialty, pick a doctor, choose a time, and confirm. Staff, admins, and end users now access their role-specific dashboards from a separate secure login.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#wizard">Start Booking</a>
+          <a class="secondary-link" href="login.html">Login to Dashboard</a>
+        </div>
+      </div>
+
+      <div class="hero-stat-grid">
+        <div class="hero-stat">
+          <span>Branches</span>
+          <strong>4</strong>
+        </div>
+        <div class="hero-stat">
+          <span>Active Doctors</span>
+          <strong id="heroDoctorCount">0</strong>
+        </div>
+        <div class="hero-stat">
+          <span>Pending Approvals</span>
+          <strong id="heroPendingCount">0</strong>
+        </div>
+        <div class="hero-stat callout">
+          <span>Wizard Promise</span>
+          <strong>Autosave on every step</strong>
+          <p>No lost progress if a patient pauses mid-booking.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="wizard" class="booking-layout">
+      <article class="card wizard-card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Core Feature</p>
+            <h2>The HealthSync Wizard</h2>
+          </div>
+          <button id="resetWizard" class="ghost-button" type="button">Reset Wizard</button>
+        </div>
+
+        <div class="progress-row">
+          <div>
+            <p class="progress-title" id="stepLabel">Step 1 of 4</p>
+            <p class="progress-subtitle" id="stepSubtitle">Select the type of care you need.</p>
+          </div>
+          <span class="autosave-chip">Autosave Active</span>
+        </div>
+
+        <div class="progress-track" aria-hidden="true">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="wizard-panel">
+          <p class="wizard-question" id="wizardQuestion"></p>
+          <div id="wizardScreen" class="wizard-screen"></div>
+        </div>
+
+        <div class="wizard-nav">
+          <button id="backButton" class="nav-button muted" type="button">Back</button>
+          <button id="nextButton" class="nav-button primary" type="button">Continue</button>
+        </div>
+      </article>
+
+      <aside class="card side-card">
+        <div class="section-head compact">
+          <div>
+            <p class="eyebrow">Live Summary</p>
+            <h2>Your booking</h2>
+          </div>
+        </div>
+
+        <div class="summary-list">
+          <div class="summary-item">
+            <span>Specialty</span>
+            <strong id="summarySpecialty">Not selected</strong>
+          </div>
+          <div class="summary-item">
+            <span>Doctor</span>
+            <strong id="summaryDoctor">Not selected</strong>
+          </div>
+          <div class="summary-item">
+            <span>Date</span>
+            <strong id="summaryDate">Not selected</strong>
+          </div>
+          <div class="summary-item">
+            <span>Time</span>
+            <strong id="summaryTime">Not selected</strong>
+          </div>
+        </div>
+
+        <div class="side-note" id="resumeNotice">
+          Your progress is stored locally in this browser so patients can safely resume later.
+        </div>
+
+        <div class="state-card">
+          <p class="state-title">Recommended production state strategy</p>
+          <ul class="plain-list">
+            <li>Use a persisted store for the wizard so step data survives refreshes.</li>
+            <li>Sync final bookings to the backend only after the user confirms.</li>
+            <li>Protect each step with validation before moving forward.</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>

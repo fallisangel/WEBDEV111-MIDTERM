@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthSync Login</title>
+  <link rel="stylesheet" href="portal.css">
+</head>
+<body data-page="login">
+  <header class="portal-header">
+    <div class="brand-block">
+      <div class="brand-mark">HS</div>
+      <div>
+        <p class="eyebrow">Secure Portal</p>
+        <h1>HealthSync Clinic</h1>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <a class="nav-link" href="index.html">Back to Website</a>
+      <button class="logout-button" type="button" data-logout>Clear Session</button>
+    </nav>
+  </header>
+
+  <main class="portal-shell">
+    <section class="portal-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Role-Based Access</p>
+        <h2>Login with a demo account to open the matching dashboard.</h2>
+        <p>
+          This prototype uses four predefined accounts: <strong>Default</strong>, <strong>Admin</strong>, <strong>Staff</strong>, and <strong>User</strong>. Each credential pair routes to its own dashboard file.
+        </p>
+      </div>
+
+      <div class="hero-side">
+        <div class="mini-stat">
+          <span>Accounts Ready</span>
+          <strong>4</strong>
+        </div>
+        <div class="mini-stat">
+          <span>Dashboard Files</span>
+          <strong>Enabled</strong>
+        </div>
+        <div class="mini-stat">
+          <span>Session Handling</span>
+          <strong>Local</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="metric-grid">
+      <article class="metric-card">
+        <span>Appointment Wizard</span>
+        <strong>Available</strong>
+        <p>Open the wizard to create test bookings and see the full booking flow.</p>
+      </article>
+    </section>
+
+    <section class="panel-grid" style="margin-top: 2rem;">
+      <article class="panel">
+        <p class="eyebrow">Sign In</p>
+        <h3>Enter your credentials</h3>
+
+        <form id="loginForm" style="margin-top: 1rem;">
+          <div style="margin-bottom: 1rem;">
+            <label style="display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 6px;">Username</label>
+            <input id="username" name="username" type="text" placeholder="Enter username" autocomplete="username" style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius); background: rgba(255,255,255,0.05); color: var(--white); font-size: 0.95rem;">
+          </div>
+
+          <div style="margin-bottom: 1rem;">
+            <label style="display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 6px;">Password</label>
+            <input id="password" name="password" type="password" placeholder="Enter password" autocomplete="current-password" style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius); background: rgba(255,255,255,0.05); color: var(--white); font-size: 0.95rem;">
+          </div>
+
+          <button class="btn-primary" type="submit" style="width: 100%;">Login to Dashboard</button>
+          <p id="loginStatus" class="status-note" data-state="idle" style="margin-top: 1rem; text-align: center; font-size: 0.85rem;"></p>
+        </form>
+
+        <div style="margin-top: 1rem; text-align: center;">
+          <a href="index.html#wizard" style="color: var(--text-muted); font-size: 0.9rem; text-decoration: underline;">Open Appointment Wizard</a>
+        </div>
+      </article>
+
+      <article class="panel">
+        <p class="eyebrow">Demo Credentials</p>
+        <h3>Quick access accounts</h3>
+        <div id="accountGrid" style="margin-top: 1rem;"></div>
+      </article>
+    </section>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>

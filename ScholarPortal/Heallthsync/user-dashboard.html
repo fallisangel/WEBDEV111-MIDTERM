@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard | HealthSync</title>
+  <link rel="stylesheet" href="portal.css">
+</head>
+<body data-protected-role="user">
+  <header class="minimal-nav">
+    <div class="brand">HEALTHSYNC</div>
+    <nav>
+      <button class="btn-primary" data-logout>Log Out</button>
+    </nav>
+  </header>
+
+  <main class="portal-shell">
+    <section class="hero-section">
+      <h1>Hello, <span data-auth-name>User</span>.</h1>
+      <p>Find a specialist or create a new appointment below.</p>
+
+      <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Search by doctor name or specialty...">
+      </div>
+    </section>
+
+    <section>
+      <h2 style="margin-bottom: 1rem; font-size: 1.1rem;">Available Doctors</h2>
+      <div class="doctor-list">
+        <article class="doctor-item">
+          <div>
+            <h3>Dr. Alicia Mendoza</h3>
+            <p>Cardiology • Central Branch</p>
+          </div>
+          <button class="btn-primary">Book Appointment</button>
+        </article>
+
+        <article class="doctor-item">
+          <div>
+            <h3>Dr. Priya Velasco</h3>
+            <p>Dermatology • Central Branch</p>
+          </div>
+          <button class="btn-primary">Book Appointment</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>
