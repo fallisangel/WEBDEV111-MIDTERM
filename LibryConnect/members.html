@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibryConnect - Members</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-wrap">
+
+    <div class="site-header">
+        <div class="site-title">Libry<span>Connect</span></div>
+        <div class="site-tagline">:: Library Management System ::</div>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html">Search</a>
+        <a href="members.html" class="active">Members</a>
+        <a href="loans.html">Loans</a>
+    </div>
+
+    <div class="page-title-bar">
+        <h1>Members</h1>
+        <p>Library card holders and member records</p>
+    </div>
+
+    <div class="visitor-counter">
+        Visitors Today: 00267 shnc;|shnc; Last Updated: March 2026
+    </div>
+
+    <div class="content">
+
+        <div class="section-heading">Member Statistics</div>
+        <div class="info-row">
+            <div class="info-box">
+                <span class="label">Total Members</span>
+                <span class="value">342</span>
+            </div>
+            <div class="info-box">
+                <span class="label">Active</span>
+                <span class="value tan">310</span>
+            </div>
+            <div class="info-box">
+                <span class="label">With Overdue</span>
+                <span class="value red">12</span>
+            </div>
+        </div>
+
+        <div class="overdue-alert">
+            *** WARNING: 12 members have overdue books. Please remind them to return items. ***
+        </div>
+
+        <hr class="divider-double">
+
+        <div class="section-heading">Find a Member</div>
+        <div class="search-row">
+            <input type="text" placeholder="Search by name or member ID...">
+            <button class="btn btn-dark">Search</button>
+            <button class="btn btn-brown">Clear</button>
+        </div>
+
+        <div class="action-row">
+            <button class="btn btn-dark">+ Register Member</button>
+            <button class="btn btn-brown">Export List</button>
+        </div>
+
+        <hr class="divider">
+
+        <div class="section-heading">Member List</div>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Grade</th>
+                    <th>Borrowed</th>
+                    <th>Overdue</th>
+                    <th>Status</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>M-0001</td>
+                    <td>Jeanelle Jamin</td>
+                    <td>College Y1</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td><span class="badge badge-ok">Active</span></td>
+                    <td><button class="btn btn-brown btn-sm">View</button></td>
+                </tr>
+                <tr>
+                    <td>M-0002</td>
+                    <td>Monica Jane Ponce</td>
+                    <td>College Y1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td><span class="badge badge-overdue">Overdue</span></td>
+                    <td><button class="btn btn-brown btn-sm">View</button></td>
+                </tr>
+                <tr>
+                    <td>M-0003</td>
+                    <td>Josephine Sobrian</td>
+                    <td>College Y1</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td><span class="badge badge-ok">Active</span></td>
+                    <td><button class="btn btn-brown btn-sm">View</button></td>
+                </tr>
+                <tr>
+                    <td>M-0004</td>
+                    <td>Ryane Harvey Bathan</td>
+                    <td>College Y2</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td><span class="badge badge-overdue">Overdue</span></td>
+                    <td><button class="btn btn-brown btn-sm">View</button></td>
+                </tr>
+                <tr>
+                    <td>M-0005</td>
+                    <td>Kerstine Jhanah L. Morallos</td>
+                    <td>Grade 12</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><span class="badge badge-new">New</span></td>
+                    <td><button class="btn btn-brown btn-sm">View</button></td>
+                </tr>
+                <tr>
+                    <td>M-0006</td>
+                    <td>Shaira Ann Concepcion</td>
+                    <td>Grade 12</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td><span class="badge badge-ok">Active</span></td>
+                    <td><button class="btn btn-brown btn-sm">View</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr class="divider-double">
+
+        <div class="section-heading">Reports</div>
+        <div class="two-col">
+            <div class="report-box">
+                <div class="report-box-title">Members by Grade</div>
+                <div class="report-row"><span>Grade 12</span><span>40</span></div>
+                <div class="report-row"><span>Grade 12</span><span>55</span></div>
+                <div class="report-row"><span>College Y1</span><span>62</span></div>
+                <div class="report-row"><span>College Y1</span><span>70</span></div>
+                <div class="report-row"><span>College Y1</span><span>58</span></div>
+                <div class="report-row"><span>College Y2</span><span>57</span></div>
+                <div class="report-row"><span>Total</span><span>342</span></div>
+            </div>
+            <div class="report-box">
+                <div class="report-box-title">Member Summary</div>
+                <div class="report-row"><span>Active members</span><span>310</span></div>
+                <div class="report-row"><span>With overdue books</span><span>12</span></div>
+                <div class="report-row"><span>New this month</span><span>8</span></div>
+                <div class="report-row"><span>Avg books borrowed</span><span>2.3</span></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="site-footer">
+       shinshan site; -------2026--------
+    </div>
+
+</div>
+
+</body>
+</html>

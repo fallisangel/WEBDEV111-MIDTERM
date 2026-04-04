@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibryConnect - Book Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-wrap">
+    <div class="site-header">
+        <div class="site-title">Libry<span>Connect</span></div>
+        <div class="site-tagline">:: Library Management System ::</div>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html" class="active">Search</a>
+        <a href="members.html">Members</a>
+        <a href="loans.html">Loans</a>
+    </div>
+
+    <div class="page-title-bar">
+        <h1>Book Search</h1>
+        <p>Browse and search the library catalog</p>
+    </div>
+
+    <div class="visitor-counter">
+        Visitors Today: 00267 &nbsp;|&nbsp; Last Updated: March 2026
+    </div>
+
+    <div class="content">
+
+        <div class="section-heading">Library Statistics</div>
+        <div class="info-row">
+            <div class="info-box">
+                <span class="label">Total Books</span>
+                <span class="value">1,240</span>
+            </div>
+            <div class="info-box">
+                <span class="label">Available</span>
+                <span class="value tan">980</span>
+            </div>
+            <div class="info-box">
+                <span class="label">Borrowed</span>
+                <span class="value">218</span>
+            </div>
+            <div class="info-box">
+                <span class="label">Overdue</span>
+                <span class="value red">14</span>
+            </div>
+        </div>
+
+        <div class="overdue-alert">
+            *** WARNING: 14 overdue books this week. Please check the Loans page. ***
+        </div>
+
+        <hr class="divider-double">
+
+        <div class="section-heading">Search the Catalog</div>
+        <div class="search-row">
+            <input type="text" placeholder="Search by title, author, or ISBN...">
+            <button class="btn btn-dark">Search</button>
+            <button class="btn btn-brown">Clear</button>
+        </div>
+
+        <div class="action-row">
+            <button class="btn btn-dark">+ Add New Book</button>
+            <button class="btn btn-brown">Export List</button>
+            <button class="btn btn-brown">Print Catalog</button>
+        </div>
+
+        <hr class="divider">
+
+        <div class="section-heading">Book Catalog</div>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Year</th>
+                    <th>Status</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BK-001</td>
+                    <td>A Little Life</td>
+                    <td>Hanya Yanagihara</td>
+                    <td>Novel</td>
+                    <td>2015</td>
+                    <td><span class="badge badge-ok">Available</span></td>
+                    <td><button class="btn btn-brown btn-sm">View</button></td>
+                </tr>
+                <tr>
+                    <td>BK-002</td>
+                    <td>The Art of Laziness</td>
+                    <td>Kyrie Petrakis</td>
+                    <td>Self-help</td>
+                    <td>2003</td>
+                    <td><span class="badge badge-borrowed">Borrowed</span></td>
+                    <td><button class="btn btn-brown btn-sm">View</button></td>
+                </tr>
+                <tr>
+                    <td>BK-003</td>
+                    <td>The Letter of Jane Austen </td>
+                    <td>Jane Austen</td>
+                    <td>Biography</td>
+                    <td>1884</td>
+                    <td><span class="badge badge-ok">Available</span></td>
+                    <td><button class="btn btn-brown btn-sm">View</button></td>
+                </tr>
+                <tr>
+                    <td>BK-004</td>
+                    <td>My Dear Cassandra</td>
+                    <td>Jane Austen</td>
+                    <td>Biography</td>
+                    <td>1798</td>
+                    <td><span class="badge badge-overdue">Overdue</span></td>
+                    <td><button class="btn btn-brown btn-sm">View</button></td>
+                </tr>
+                <tr>
+                    <td>BK-005</td>
+                    <td>The Subtle Art of Not Giving a Fuck</td>
+                    <td>Mark Manson</td>
+                    <td>Self-Help</td>
+                    <td>2016</td>
+                    <td><span class="badge badge-ok">Available</span></td>
+                    <td><button class="btn btn-brown btn-sm">View</button></td>
+                </tr>
+                <tr>
+                    <td>BK-006</td>
+                    <td>The 48 Laws of Power</td>
+                    <td>Robert Greene</td>
+                    <td>Self-Help</td>
+                    <td>1998</td>
+                    <td><span class="badge badge-borrowed">Borrowed</span></td>
+                    <td><button class="btn btn-brown btn-sm">View</button></td>
+                </tr>
+                <tr>
+                    <td>BK-007</td>
+                    <td>The Art of Seduction</td>
+                    <td>Robert Greene</td>
+                    <td>Self-Help</td>
+                    <td>2001</td>
+                    <td><span class="badge badge-ok">Available</span></td>
+                    <td><button class="btn btn-brown btn-sm">View</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr class="divider-double">
+
+        <div class="section-heading">Reports</div>
+        <div class="two-col">
+            <div class="report-box">
+                <div class="report-box-title">Books by Genre</div>
+                <div class="report-row"><span>Classic</span><span>320</span></div>
+                <div class="report-row"><span>Fiction</span><span>280</span></div>
+                <div class="report-row"><span>History</span><span>210</span></div>
+                <div class="report-row"><span>Self-Help</span><span>190</span></div>
+                <div class="report-row"><span>Poetry</span><span>140</span></div>
+                <div class="report-row"><span>Total</span><span>1,240</span></div>
+            </div>
+            <div class="report-box">
+                <div class="report-box-title">Most Borrowed</div>
+                <div class="report-row"><span>The letters of Jane Austen</span><span>48x</span></div>
+                <div class="report-row"><span>My dear Cassandra</span><span>41x</span></div>
+                <div class="report-row"><span>The Subtle Art of Not Giving a Fuck</span><span>36x</span></div>
+                <div class="report-row"><span>The 48 Laws of Power</span><span>29x</span></div>
+                <div class="report-row"><span>The Art of Seduction</span><span>22x</span></div>
+            </div>
+        </div>
+
+    </div>
+
+  
+    <div class="site-footer">
+        shinshan site; -------2026--------
+    </div>
+
+</div>
+
+</body>
+</html>

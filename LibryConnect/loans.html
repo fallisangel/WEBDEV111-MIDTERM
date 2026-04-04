@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibryConnect - Loans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-wrap">
+
+    <div class="site-header">
+        <div class="site-title">Libry<span>Connect</span></div>
+        <div class="site-tagline">:: Library Management System ::</div>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html">Search</a>
+        <a href="members.html">Members</a>
+        <a href="loans.html" class="active">Loans</a>
+    </div>
+
+    <div class="page-title-bar">
+        <h1>Loans</h1>
+        <p>Track book borrowing and return records</p>
+    </div>
+
+    <div class="visitor-counter">
+        Visitors Today: 00247 &nbsp;|&nbsp; Last Updated: March 2025
+    </div>
+
+    <div class="content">
+
+        <div class="section-heading">Loan Statistics</div>
+        <div class="info-row">
+            <div class="info-box">
+                <span class="label">Total Loans</span>
+                <span class="value">218</span>
+            </div>
+            <div class="info-box">
+                <span class="label">Active</span>
+                <span class="value tan">192</span>
+            </div>
+            <div class="info-box">
+                <span class="label">Returned</span>
+                <span class="value">12</span>
+            </div>
+            <div class="info-box">
+                <span class="label">Overdue</span>
+                <span class="value red">14</span>
+            </div>
+        </div>
+
+        <div class="overdue-alert">
+            *** WARNING: 14 books are overdue. Contact members with overdue items immediately. ***
+        </div>
+
+        <hr class="divider-double">
+
+        <div class="section-heading">Loan Records</div>
+        <div class="action-row">
+            <button class="btn btn-dark">+ New Loan</button>
+            <button class="btn btn-brown">Mark as Returned</button>
+            <button class="btn btn-brown">Print Report</button>
+        </div>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Loan ID</th>
+                    <th>Member</th>
+                    <th>Book Title</th>
+                    <th>Borrowed</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>L-001</td>
+                    <td>Josephine Sobrian</td>
+                    <td>A Little Life</td>
+                    <td>2026-02-01</td>
+                    <td>2026-02-15</td>
+                    <td><span class="badge badge-ok">Active</span></td>
+                    <td><button class="btn btn-brown btn-sm">Return</button></td>
+                </tr>
+                <tr>
+                    <td>L-002</td>
+                    <td>Monica Jane Ponce</td>
+                    <td>The Art of Laziness</td>
+                    <td>2026-02-20</td>
+                    <td>2026-03-06</td>
+                    <td>
+                        <span class="badge badge-overdue">Overdue</span>
+                        <span class="stamp">Late</span>
+                    </td>
+                    <td><button class="btn btn-brown btn-sm">Return</button></td>
+                </tr>
+                <tr>
+                    <td>L-003</td>
+                    <td>Shaira Ann Concepcion</td>
+                    <td>My Dear Cassandra</td>
+                    <td>2026-03-05</td>
+                    <td>2026-03-19</td>
+                    <td><span class="badge badge-ok">Active</span></td>
+                    <td><button class="btn btn-brown btn-sm">Return</button></td>
+                </tr>
+                <tr>
+                    <td>L-004</td>
+                    <td>Kerstine Jhanah L. Morallos</td>
+                    <td>The 48 Laws of Power</td>
+                    <td>2026-02-10</td>
+                    <td>2026-02-24</td>
+                    <td>
+                        <span class="badge badge-overdue">Overdue</span>
+                        <span class="stamp">Late</span>
+                    </td>
+                    <td><button class="btn btn-brown btn-sm">Return</button></td>
+                </tr>
+                <tr>
+                    <td>L-005</td>
+                    <td>Santina Gerlyn Ocampo</td>
+                    <td>The Subtle Art of Not Giving a Fuck</td>
+                    <td>2026-03-10</td>
+                    <td>2026-03-24</td>
+                    <td><span class="badge badge-ok">Active</span></td>
+                    <td><button class="btn btn-brown btn-sm">Return</button></td>
+                </tr>
+                <tr>
+                    <td>L-006</td>
+                    <td>Ryane Harvey Bathan</td>
+                    <td>The Art of Seduction</td>
+                    <td>2026-02-28</td>
+                    <td>2026-03-14</td>
+                    <td>
+                        <span class="badge badge-returned">Returned</span>
+                        <span class="stamp ok">OK</span>
+                    </td>
+                    <td><button class="btn btn-brown btn-sm">View</button></td>
+                </tr>
+                <tr>
+                    <td>L-007</td>
+                    <td>Jeanelle Jamin</td>
+                    <td>The Letter of Jane Austen</td>
+                    <td>2026-03-08</td>
+                    <td>2026-03-22</td>
+                    <td><span class="badge badge-ok">Active</span></td>
+                    <td><button class="btn btn-brown btn-sm">Return</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr class="divider-double">
+
+        <div class="section-heading">Reports</div>
+        <div class="two-col">
+            <div class="report-box">
+                <div class="report-box-title">Loan Summary</div>
+                <div class="report-row"><span>Total Loans</span><span>218</span></div>
+                <div class="report-row"><span>Active</span><span>192</span></div>
+                <div class="report-row"><span>Returned</span><span>12</span></div>
+                <div class="report-row"><span>Overdue</span><span>14</span></div>
+                <div class="report-row"><span>Overdue this week</span><span>6</span></div>
+            </div>
+            <div class="report-box">
+                <div class="report-box-title">Overdue Members</div>
+                <div class="report-row"><span>Monica Jane Ponce</span><span>2 books</span></div>
+                <div class="report-row"><span>Kerstine Jhanah L. Morallos</span><span>1 book</span></div>
+                <div class="report-row"><span>Shaira Ann Concepcion</span><span>1 book</span></div>
+                <div class="report-row"><span>Ryane Harvey Bathan</span><span>1 book</span></div>
+                <div class="report-row"><span>Others</span><span>9 books</span></div>
+                <div class="report-row"><span>Total Overdue</span><span>14 books</span></div>
+            </div>
+        </div>
+
+    </div>
+        shinshan site; -------2026--------
+    <div class="site-footer">
+       
+    </div>
+
+</div>
+
+</body>
+</html>
