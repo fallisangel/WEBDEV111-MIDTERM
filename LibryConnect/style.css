@@ -12,7 +12,6 @@ body {
     min-height: 100vh;
 }
 
-/* ── centered page wrapper ── */
 .page-wrap {
     width: 760px;
     margin: 0 auto;
@@ -22,7 +21,6 @@ body {
     min-height: 100vh;
 }
 
-/* ── site header / banner ── */
 .site-header {
     background-color: #4a2800;
     text-align: center;
@@ -51,7 +49,6 @@ body {
     font-style: italic;
 }
 
-/* ── top nav bar ── */
 .topnav {
     background-color: #7a4f1e;
     display: flex;
@@ -86,7 +83,6 @@ body {
     color: #f0d080;
 }
 
-/* ── page title bar ── */
 .page-title-bar {
     background-color: #f0d080;
     border-top: 2px solid #7a4f1e;
@@ -110,12 +106,10 @@ body {
     font-style: italic;
 }
 
-/* ── main content area ── */
 .content {
     padding: 16px;
 }
 
-/* ── horizontal rule divider ── */
 .divider {
     border: none;
     border-top: 1px solid #c4a265;
@@ -128,7 +122,6 @@ body {
     margin: 14px 0;
 }
 
-/* ── section heading ── */
 .section-heading {
     background-color: #7a4f1e;
     color: #f0d080;
@@ -141,7 +134,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* ── info boxes row ── */
 .info-row {
     display: flex;
     gap: 10px;
@@ -178,7 +170,6 @@ body {
 .info-box .value.red { color: #8b0000; }
 .info-box .value.tan { color: #7a4f1e; }
 
-/* ── overdue alert ── */
 .overdue-alert {
     background-color: #ffe8e8;
     border: 2px solid #8b0000;
@@ -190,7 +181,6 @@ body {
     text-align: center;
 }
 
-/* ── search bar ── */
 .search-row {
     display: flex;
     gap: 6px;
@@ -213,7 +203,6 @@ body {
     outline: 1px solid #7a4f1e;
 }
 
-/* ── old 2000s style buttons ── */
 .btn {
     font-family: "Times New Roman", Times, serif;
     font-size: 0.82rem;
@@ -250,7 +239,6 @@ body {
     font-size: 0.78rem;
 }
 
-/* ── action buttons row ── */
 .action-row {
     display: flex;
     gap: 6px;
@@ -258,7 +246,6 @@ body {
     flex-wrap: wrap;
 }
 
-/* ── 2000s style table ── */
 .data-table {
     width: 100%;
     border-collapse: collapse;
@@ -301,7 +288,6 @@ body {
     color: #2a1800;
 }
 
-/* ── badges ── */
 .badge {
     font-size: 0.72rem;
     font-weight: bold;
@@ -317,7 +303,6 @@ body {
 .badge-new      { background: #fdf5e6; color: #4a2800; border-color: #c4a265; }
 .badge-returned { background: #e8f5e0; color: #2d5a1b; border-color: #2d5a1b; }
 
-/* ── stamp ── */
 .stamp {
     display: inline-block;
     border: 2px solid #8b0000;
@@ -336,7 +321,6 @@ body {
     color: #2d5a1b;
 }
 
-/* ── two-column report layout ── */
 .two-col {
     display: flex;
     gap: 10px;
@@ -378,7 +362,6 @@ body {
     background-color: #f0d080;
 }
 
-/* ── site footer ── */
 .site-footer {
     background-color: #4a2800;
     text-align: center;
@@ -390,7 +373,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* ── visitor counter (2000s classic) ── */
 .visitor-counter {
     text-align: center;
     padding: 8px;
