@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StackMaster - Suppliers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Stack<span>Master</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Stock</a></li>
+            <li><a href="supplier.html" class="active">Suppliers</a></li>
+            <li><a href="order.html">Orders</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>Suppliers</h1>
+        <p>PC hardware distributors and brand contacts</p>
+    </div>
+
+    <div class="container">
+
+        <div class="info-cards">
+            <div class="card">
+                <h3>Total Suppliers</h3>
+                <div class="number">10</div>
+            </div>
+            <div class="card">
+                <h3>Active</h3>
+                <div class="number">8</div>
+            </div>
+            <div class="card">
+                <h3>Inactive</h3>
+                <div class="number red">2</div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-primary">+ Add Supplier</button>
+            <button class="btn btn-outline">Export List</button>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Supplier Name</th>
+                        <th>Contact Person</th>
+                        <th>Phone</th>
+                        <th>Supplies</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S-01</td>
+                        <td>TechZone Distributing</td>
+                        <td>Romelisa Castor</td>
+                        <td>0917-111-2233</td>
+                        <td>CPU, Motherboard</td>
+                        <td><span class="badge badge-ok">Active</span></td>
+                        <td>
+                            <button class="btn btn-outline btn-sm">Edit</button>
+                            <button class="btn btn-sm" style="background:#fee2e2; color:#b91c1c; border:none; border-radius:4px; cursor:pointer;">Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>S-02</td>
+                        <td>GPU Hub Manila</td>
+                        <td>Dianne Sarmiento</td>
+                        <td>0918-444-5566</td>
+                        <td>GPU</td>
+                        <td><span class="badge badge-ok">Active</span></td>
+                        <td>
+                            <button class="btn btn-outline btn-sm">Edit</button>
+                            <button class="btn btn-sm" style="background:#fee2e2; color:#b91c1c; border:none; border-radius:4px; cursor:pointer;">Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>S-03</td>
+                        <td>RamPower Supply Co.</td>
+                        <td>Mark Louie</td>
+                        <td>0919-777-8899</td>
+                        <td>RAM, Storage</td>
+                        <td><span class="badge badge-ok">Active</span></td>
+                        <td>
+                            <button class="btn btn-outline btn-sm">Edit</button>
+                            <button class="btn btn-sm" style="background:#fee2e2; color:#b91c1c; border:none; border-radius:4px; cursor:pointer;">Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>S-04</td>
+                        <td>PowerBox Trading</td>
+                        <td>Reygan Pelayo</td>
+                        <td>0920-333-4455</td>
+                        <td>PSU, Case</td>
+                        <td><span class="badge badge-cancelled">Inactive</span></td>
+                        <td>
+                            <button class="btn btn-outline btn-sm">Edit</button>
+                            <button class="btn btn-sm" style="background:#fee2e2; color:#b91c1c; border:none; border-radius:4px; cursor:pointer;">Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>S-05</td>
+                        <td>PC Parts Depot</td>
+                        <td>Jacky Chen</td>
+                        <td>0921-222-3344</td>
+                        <td>CPU, GPU, RAM</td>
+                        <td><span class="badge badge-ok">Active</span></td>
+                        <td>
+                            <button class="btn btn-outline btn-sm">Edit</button>
+                            <button class="btn btn-sm" style="background:#fee2e2; color:#b91c1c; border:none; border-radius:4px; cursor:pointer;">Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>S-06</td>
+                        <td>CoolMaster Components</td>
+                        <td>Shaira Mae</td>
+                        <td>0922-555-6677</td>
+                        <td>Case, Cooler</td>
+                        <td><span class="badge badge-ok">Active</span></td>
+                        <td>
+                            <button class="btn btn-outline btn-sm">Edit</button>
+                            <button class="btn btn-sm" style="background:#fee2e2; color:#b91c1c; border:none; border-radius:4px; cursor:pointer;">Remove</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <footer>
+        StackMaster &mdash; PC Hardware Inventory System
+    </footer>
+
+</body>
+</html>

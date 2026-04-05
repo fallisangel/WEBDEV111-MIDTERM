@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StackMaster - Orders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Stack<span>Master</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Stock</a></li>
+            <li><a href="supplier.html">Suppliers</a></li>
+            <li><a href="order.html" class="active">Orders</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>Orders</h1>
+        <p>Purchase orders for PC hardware restocking</p>
+    </div>
+
+    <div class="container">
+
+        <div class="info-cards">
+            <div class="card">
+                <h3>Total Orders</h3>
+                <div class="number">24</div>
+            </div>
+            <div class="card">
+                <h3>Pending</h3>
+                <div class="number blue">5</div>
+            </div>
+            <div class="card">
+                <h3>Delivered</h3>
+                <div class="number">17</div>
+            </div>
+            <div class="card">
+                <h3>Cancelled</h3>
+                <div class="number red">2</div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-primary">+ New Order</button>
+            <button class="btn btn-outline">Export Orders</button>
+            <button class="btn btn-outline">Print</button>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Supplier</th>
+                        <th>Item</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#ORD-024</td>
+                        <td>GPU Hub Manila</td>
+                        <td>RTX 4060 8GB</td>
+                        <td>5</td>
+                        <td>Php 110,000</td>
+                        <td>2025-03-18</td>
+                        <td><span class="badge badge-pending">Pending</span></td>
+                        <td><button class="btn btn-outline btn-sm">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#ORD-023</td>
+                        <td>TechZone Distributing</td>
+                        <td>Ryzen 5 5600X</td>
+                        <td>10</td>
+                        <td>Php 85,000</td>
+                        <td>2025-03-15</td>
+                        <td><span class="badge badge-delivered">Delivered</span></td>
+                        <td><button class="btn btn-outline btn-sm">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#ORD-022</td>
+                        <td>PowerBox Trading</td>
+                        <td>650W 80+ Bronze PSU</td>
+                        <td>10</td>
+                        <td>Php 41,000</td>
+                        <td>2025-03-12</td>
+                        <td><span class="badge badge-pending">Pending</span></td>
+                        <td><button class="btn btn-outline btn-sm">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#ORD-021</td>
+                        <td>RamPower Supply Co.</td>
+                        <td>16GB DDR4 3200MHz</td>
+                        <td>20</td>
+                        <td>Php 44,000</td>
+                        <td>2025-03-10</td>
+                        <td><span class="badge badge-delivered">Delivered</span></td>
+                        <td><button class="btn btn-outline btn-sm">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#ORD-020</td>
+                        <td>PC Parts Depot</td>
+                        <td>Core i5-13400F</td>
+                        <td>8</td>
+                        <td>Php 73,600</td>
+                        <td>2025-03-08</td>
+                        <td><span class="badge badge-delivered">Delivered</span></td>
+                        <td><button class="btn btn-outline btn-sm">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#ORD-019</td>
+                        <td>CoolMaster Components</td>
+                        <td>Mid Tower ATX Case</td>
+                        <td>5</td>
+                        <td>Php 27,500</td>
+                        <td>2025-03-05</td>
+                        <td><span class="badge badge-delivered">Delivered</span></td>
+                        <td><button class="btn btn-outline btn-sm">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>#ORD-018</td>
+                        <td>RamPower Supply Co.</td>
+                        <td>1TB NVMe SSD</td>
+                        <td>10</td>
+                        <td>Php 35,000</td>
+                        <td>2025-03-01</td>
+                        <td><span class="badge badge-cancelled">Cancelled</span></td>
+                        <td><button class="btn btn-outline btn-sm">View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="report-grid">
+            <div class="report-box">
+                <h3>Order Summary</h3>
+                <div class="report-row"><span>Total Orders</span><span>24</span></div>
+                <div class="report-row"><span>Delivered</span><span>17</span></div>
+                <div class="report-row"><span>Pending</span><span>5</span></div>
+                <div class="report-row"><span>Cancelled</span><span>2</span></div>
+                <div class="report-row"><span>Total Spent</span><span>Php 416,100</span></div>
+            </div>
+            <div class="report-box">
+                <h3>Top Suppliers</h3>
+                <div class="report-row"><span>TechZone Distributing</span><span>8 orders</span></div>
+                <div class="report-row"><span>GPU Hub Manila</span><span>5 orders</span></div>
+                <div class="report-row"><span>RamPower Supply Co.</span><span>4 orders</span></div>
+                <div class="report-row"><span>PC Parts Depot</span><span>4 orders</span></div>
+                <div class="report-row"><span>CoolMaster Components</span><span>3 orders</span></div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        StackMaster &mdash; PC Hardware Inventory System
+    </footer>
+
+</body>
+</html>

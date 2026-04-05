@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+/* nav */
+nav {
+    background-color: #1b1b2f;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #e94560;
+    color: white;
+}
+
+
+.page-header {
+    background-color: #1b1b2f;
+    color: white;
+    padding: 24px;
+}
+
+.page-header h1 {
+    font-size: 1.5rem;
+}
+
+.page-header p {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+.container {
+    padding: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.info-cards {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-radius: 6px;
+    padding: 20px 24px;
+    flex: 1;
+    min-width: 160px;
+    border-top: 4px solid #1b1b2f;
+}
+
+.card h3 {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.card .number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1b1b2f;
+}
+
+.card .number.red {
+    color: #e94560;
+}
+
+.card .number.muted {
+    color: #888;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.btn-primary {
+    background-color: #e94560;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #c73652;
+}
+
+.btn-outline {
+    background-color: white;
+    color: #1b1b2f;
+    border: 1px solid #ccc;
+}
+
+.btn-outline:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.82rem;
+}
+
+
+.table-wrapper {
+    background: white;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+thead {
+    background-color: #1b1b2f;
+    color: white;
+}
+
+thead th {
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background-color: #fafafa;
+}
+
+tbody td {
+    padding: 12px 16px;
+}
+
+.badge {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.badge-ok {
+    background-color: #e6f4ea;
+    color: #2d7a3a;
+}
+
+.badge-low {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.badge-out {
+    background-color: #fde8ec;
+    color: #c0392b;
+}
+
+.badge-pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.badge-delivered {
+    background-color: #e6f4ea;
+    color: #2d7a3a;
+}
+
+.badge-cancelled {
+    background-color: #fde8ec;
+    color: #c0392b;
+}
+
+
+.report-grid {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.report-box {
+    background: white;
+    border-radius: 6px;
+    padding: 20px;
+    flex: 1;
+    min-width: 220px;
+}
+
+.report-box h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e94560;
+}
+
+.report-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 0.88rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.report-row:last-child {
+    border-bottom: none;
+    font-weight: bold;
+    color: #1b1b2f;
+}
+
+
+footer {
+    background-color: #1b1b2f;
+    color: #666;
+    text-align: center;
+    padding: 14px;
+    font-size: 0.8rem;
+    margin-top: 48px;
+}

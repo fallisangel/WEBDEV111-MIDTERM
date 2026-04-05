@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StackMaster - Stock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Stack<span>Master</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Stock</a></li>
+            <li><a href="supplier.html">Suppliers</a></li>
+            <li><a href="order.html">Orders</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>PC Hardware Stock</h1>
+        <p>Current inventory of PC components and peripherals</p>
+    </div>
+
+    <div class="container">
+
+        <div class="info-cards">
+            <div class="card">
+                <h3>Total Items</h3>
+                <div class="number">186</div>
+            </div>
+            <div class="card">
+                <h3>Low Stock</h3>
+                <div class="number blue">9</div>
+            </div>
+            <div class="card">
+                <h3>Out of Stock</h3>
+                <div class="number red">4</div>
+            </div>
+            <div class="card">
+                <h3>Categories</h3>
+                <div class="number">7</div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-primary">+ Add Item</button>
+            <button class="btn btn-outline">Export CSV</button>
+            <button class="btn btn-outline">Print Report</button>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item ID</th>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Brand</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>Ryzen 5 5600X</td>
+                        <td>CPU</td>
+                        <td>AMD</td>
+                        <td>14</td>
+                        <td>Php 8,500</td>
+                        <td><span class="badge badge-ok">In Stock</span></td>
+                        <td><button class="btn btn-outline btn-sm">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>Core i5-13400F</td>
+                        <td>CPU</td>
+                        <td>Intel</td>
+                        <td>3</td>
+                        <td>Php 9,200</td>
+                        <td><span class="badge badge-low">Low</span></td>
+                        <td><button class="btn btn-outline btn-sm">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>#003</td>
+                        <td>RTX 4060 8GB</td>
+                        <td>GPU</td>
+                        <td>NVIDIA</td>
+                        <td>0</td>
+                        <td>Php 22,000</td>
+                        <td><span class="badge badge-out">Out</span></td>
+                        <td><button class="btn btn-outline btn-sm">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>#004</td>
+                        <td>RX 6600 8GB</td>
+                        <td>GPU</td>
+                        <td>AMD</td>
+                        <td>6</td>
+                        <td>Php 14,500</td>
+                        <td><span class="badge badge-ok">In Stock</span></td>
+                        <td><button class="btn btn-outline btn-sm">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>#005</td>
+                        <td>16GB DDR4 3200MHz</td>
+                        <td>RAM</td>
+                        <td>Kingston</td>
+                        <td>22</td>
+                        <td>Php 2,200</td>
+                        <td><span class="badge badge-ok">In Stock</span></td>
+                        <td><button class="btn btn-outline btn-sm">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>#006</td>
+                        <td>32GB DDR5 5200MHz</td>
+                        <td>RAM</td>
+                        <td>Corsair</td>
+                        <td>2</td>
+                        <td>Php 6,800</td>
+                        <td><span class="badge badge-low">Low</span></td>
+                        <td><button class="btn btn-outline btn-sm">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>#007</td>
+                        <td>1TB NVMe SSD</td>
+                        <td>Storage</td>
+                        <td>Samsung 980</td>
+                        <td>18</td>
+                        <td>Php 3,500</td>
+                        <td><span class="badge badge-ok">In Stock</span></td>
+                        <td><button class="btn btn-outline btn-sm">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>#008</td>
+                        <td>B550 ATX Motherboard</td>
+                        <td>Motherboard</td>
+                        <td>MSI</td>
+                        <td>5</td>
+                        <td>Php 7,200</td>
+                        <td><span class="badge badge-ok">In Stock</span></td>
+                        <td><button class="btn btn-outline btn-sm">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>#009</td>
+                        <td>650W 80+ Bronze PSU</td>
+                        <td>PSU</td>
+                        <td>Seasonic</td>
+                        <td>0</td>
+                        <td>Php 4,100</td>
+                        <td><span class="badge badge-out">Out</span></td>
+                        <td><button class="btn btn-outline btn-sm">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>#010</td>
+                        <td>Mid Tower ATX Case</td>
+                        <td>Case</td>
+                        <td>Lian Li</td>
+                        <td>8</td>
+                        <td>Php 5,500</td>
+                        <td><span class="badge badge-ok">In Stock</span></td>
+                        <td><button class="btn btn-outline btn-sm">Edit</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="report-grid">
+            <div class="report-box">
+                <h3>Stock by Category</h3>
+                <div class="report-row"><span>CPU</span><span>17 units</span></div>
+                <div class="report-row"><span>GPU</span><span>6 units</span></div>
+                <div class="report-row"><span>RAM</span><span>24 units</span></div>
+                <div class="report-row"><span>Storage</span><span>36 units</span></div>
+                <div class="report-row"><span>Motherboard</span><span>12 units</span></div>
+                <div class="report-row"><span>PSU</span><span>10 units</span></div>
+                <div class="report-row"><span>Case</span><span>8 units</span></div>
+                <div class="report-row"><span>Total</span><span>186 units</span></div>
+            </div>
+            <div class="report-box">
+                <h3>Estimated Stock Value</h3>
+                <div class="report-row"><span>CPU</span><span>Php 172,200</span></div>
+                <div class="report-row"><span>GPU</span><span>Php 87,000</span></div>
+                <div class="report-row"><span>RAM</span><span>Php 61,800</span></div>
+                <div class="report-row"><span>Storage</span><span>Php 63,000</span></div>
+                <div class="report-row"><span>Motherboard</span><span>Php 86,400</span></div>
+                <div class="report-row"><span>PSU</span><span>Php 41,000</span></div>
+                <div class="report-row"><span>Case</span><span>Php 44,000</span></div>
+                <div class="report-row"><span>Total</span><span>Php 555,400</span></div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        StackMaster &mdash; PC Hardware Inventory System
+    </footer>
+
+</body>
+</html>
