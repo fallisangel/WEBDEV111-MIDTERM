@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -15,14 +14,17 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 16px 5%;
     background: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .brand {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #003366;
     text-decoration: none;
 }
@@ -34,18 +36,18 @@ nav {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 24px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    padding-bottom: 5px;
+    font-size: 0.95rem;
+    padding-bottom: 4px;
     position: relative;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
-
 
 .nav-links a::after {
     content: '';
@@ -58,73 +60,324 @@ nav {
     transition: width 0.3s ease;
 }
 
+.nav-links a:hover {
+    color: #003366;
+}
+
 .nav-links a:hover::after,
-.nav-links a:active::after {
+.nav-links a.active::after {
     width: 100%;
 }
 
 .hero {
     text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), 
-                url('https://imgcdn.zigwheels.ph/medium/gallery/exterior/25/717/nissan-nv350-urvan-83012.jpg') no-repeat;
+    padding: 110px 20px 90px;
+    background: linear-gradient(rgba(0, 51, 102, 0.82), rgba(0, 51, 102, 0.82)),
+                url('https://imgcdn.zigwheels.ph/medium/gallery/exterior/25/717/nissan-nv350-urvan-83012.jpg') no-repeat center center;
     background-size: cover;
-    background-position: center;
     color: white;
-}
-
-.hero-badge {
-    background: #ff6600;
-    display: inline-block;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    margin-bottom: 20px;
 }
 
 .hero-quote {
     font-size: 3rem;
-    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+
+.hero-quote em {
+    font-style: italic;
+    color: #ff9944;
 }
 
 .hero-sub {
-    margin-bottom: 30px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: 1px;
 }
 
 .btn-rent {
     display: inline-block;
-    padding: 15px 40px;
+    padding: 14px 40px;
     background: #ff6600;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.2s;
+    border: 2px solid transparent;
 }
 
 .btn-rent:hover {
     background: #e65c00;
-    transform: scale(1.05);
+    transform: translateY(-2px);
 }
 
-.features {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 5%;
-    gap: 20px;
-}
-
-.feature {
+.rental-step {
+    background-color: #ffffff;
+    padding: 64px 40px;
     text-align: center;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    flex: 1;
 }
 
-.feature-icon {
-    font-size: 3rem;
-    margin-bottom: 15px;
+.rental-step h2 {
+    font-size: 1.7rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.rental-step h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #ff6600;
+    margin: 10px auto 36px;
+    border-radius: 2px;
+}
+
+.steps-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.step-divider {
+    width: 1px;
+    background-color: transparent;
+    flex-shrink: 0;
+    align-self: stretch;
+    margin: 0 16px;
+}
+
+.step-card {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 24px 20px 20px;
+    flex: 1;
+    text-align: left;
+    position: relative;
+}
+
+.step-card p {
+    font-size: 0.88rem;
+    color: #2a2a2a;
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+
+.step-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #ff6600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.services {
+    background-color: #003366;
+    padding: 64px 40px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 1.7rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.services h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #ff6600;
+    margin: 10px auto 12px;
+    border-radius: 2px;
+}
+
+.services-subtitle {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    max-width: 900px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.service-divider {
+    width: 1px;
+    background-color: transparent;
+    flex-shrink: 0;
+    margin: 0 16px;
+    align-self: stretch;
+}
+
+.service-card {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 30px 22px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    transition: transform 0.25s;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+}
+
+.service-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    min-height: 40px;
+}
+
+.service-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.service-desc {
+    font-size: 0.86rem;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.7;
+    text-align: center;
+}
+
+footer {
+    background-color: #001f3f;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 40px 5%;
+    font-size: 0.88rem;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto 24px;
+}
+
+.footer-brand {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.footer-brand span {
+    color: #ff6600;
+}
+
+.footer-tagline {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.82rem;
+}
+
+.footer-col h4 {
+    color: #ff6600;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.footer-col p,
+.footer-col a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    line-height: 1.8;
+    text-decoration: none;
+    display: block;
+}
+
+.footer-col a:hover {
+    color: #ff6600;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 16px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.8rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 70px 8%;
+    background-color: #ffffff;
+}
+
+.about-section.reverse {
+    background-color: #f4f7f6;
+    flex-direction: row-reverse;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-heading {
+    font-size: 1.6rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.about-heading::after {
+    content: '';
+    display: block;
+    width: 46px;
+    height: 3px;
+    background: #ff6600;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+.about-text p {
+    font-size: 0.92rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 14px;
+}
+
+.about-image-wrap {
+    flex-shrink: 0;
+}
+
+.circle-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #003366;
+    box-shadow: 0 8px 24px rgba(0, 51, 102, 0.18);
 }
