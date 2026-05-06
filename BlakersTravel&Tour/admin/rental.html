@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Management</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+
+    <header class="top-nav">
+        <div class="admin-user">
+            <span>admin</span>
+            <div class="avatar-circle">AD</div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="nav-section">
+                <span class="nav-label">MAIN</span>
+                <ul>
+                    <li><a href="admin.html">DASHBOARD</a></li>
+                </ul>
+            </div>
+            <div class="nav-section">
+                <span class="nav-label">MANAGEMENT</span>
+                <ul>
+                    <li><a href="rental.html" class="active">RENTAL MANAGEMENT</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-footer">
+                <ul>
+                    <li><a href="#">SETTINGS</a></li>
+                    <li><a href="../index.html">LOGOUT</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="content">
+            <h2 class="section-title">Rental Management</h2>
+
+            <div class="tabs">
+                <div class="tab-link active" onclick="showTab('vehicles', this)">Vehicles</div>
+                <div class="tab-link" onclick="showTab('active', this)">Active Rentals</div>
+                <div class="tab-link" onclick="showTab('history', this)">History</div>
+            </div>
+
+            <div id="vehicles" class="view-content active">
+                <div class="action-header">
+                    <button class="btn active" onclick="filterVehicles('all', this)">All</button>
+                    <button class="btn" onclick="filterVehicles('available', this)">Available</button>
+                    <button class="btn" onclick="filterVehicles('rented', this)">Rented</button>
+                    <button class="btn btn-add">+ Rent Out</button>
+                    <button class="btn btn-add">+ Add Vehicle</button>
+                </div>
+                <div class="table-container">
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Vehicle</th>
+                                <th>Type</th>
+                                <th>Plate</th>
+                                <th>Price/day</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Toyota Vios</td><td>Car</td><td>CCC-89-S</td><td>P4,500</td><td>Available</td></tr>
+                            <tr><td>Toyota Vios</td><td>Car</td><td>CCC-89-S</td><td>P4,500</td><td>Available</td></tr>
+                            <tr><td>Toyota Vios</td><td>Car</td><td>CCC-89-S</td><td>P4,500</td><td>Available</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="active" class="view-content">
+                <div class="table-container">
+                    <h3 class="table-title">Active Rentals</h3>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Customer</th>
+                                <th>Vehicle</th>
+                                <th>Start</th>
+                                <th>Return</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Chen</td><td>Toyota Vios</td><td>April 29</td><td>May 2</td><td class="text-link">Return</td></tr>
+                            <tr><td>Reygan</td><td>Toyota Vios</td><td>April 29</td><td>May 2</td><td class="text-link">Return</td></tr>
+                            <tr><td>Shaira</td><td>Toyota Vios</td><td>April 29</td><td>May 2</td><td class="text-link">Return</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="history" class="view-content">
+                <div class="table-container">
+                    <h3 class="table-title">History</h3>
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Customer</th>
+                                <th>Vehicle</th>
+                                <th>Start</th>
+                                <th>Returned</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Chen</td><td>Toyota Vios</td><td>April 29</td><td>May 2</td><td>5 Days</td></tr>
+                            <tr><td>Reygan</td><td>Toyota Vios</td><td>April 29</td><td>May 2</td><td>5 Days</td></tr>
+                            <tr><td>Shaira</td><td>Toyota Vios</td><td>April 29</td><td>May 2</td><td>5 Days</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function showTab(id, el) {
+            document.querySelectorAll('.view-content').forEach(v => v.classList.remove('active'));
+            document.querySelectorAll('.tab-link').forEach(t => t.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            el.classList.add('active');
+        }
+
+        function filterVehicles(type, el) {
+            document.querySelectorAll('.action-header .btn:not(.btn-add)').forEach(b => b.classList.remove('active'));
+            el.classList.add('active');
+        }
+    </script>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>
+    
+        
