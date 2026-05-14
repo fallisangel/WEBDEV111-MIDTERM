@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Rent | Blakers Travel & Tour</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  
+    <nav>
+        <a class="brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
+        <ul class="nav-links">
+            <li><a href="user.html" onclick="checkRentalAccess()">Van Rental</a></li>
+            <li><a href="rentview.html" class="active">Your Rent</a></li>
+            <li><a href="login.html">Log out</a></li>
+        </ul>
+    </nav>
+ 
+    <div class="page-hero">
+        <h1>Your Rent</h1>
+    </div>
+ 
+  <section class="rent-view">
+    <div class="card rent-status-card">
+      <p class="card-title">Rent Status</p>
+      <p class="rent-id">Rent ID: 0987845412312313</p>
+ 
+      <div class="status-track">
+        <div class="track-fill" style="width: 33%;"></div>
+ 
+
+        <div class="status-step done">
+          <div class="step-icon">🚗</div>
+          <span class="step-label">Rent Placed</span>
+        </div>
+ 
+        <div class="status-step active">
+          <div class="step-icon">📋</div>
+          <span class="step-label">Accepted</span>
+        </div>
+ 
+        <div class="status-step">
+          <div class="step-icon">🛵</div>
+          <span class="step-label">Pick Up</span>
+        </div>
+ 
+        <div class="status-step">
+          <div class="step-icon">📦</div>
+          <span class="step-label">Returned</span>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="card">
+      <p class="card-title">Rented Van</p>
+      <div class="van-item">
+        <img
+          src="img/van4.jpg"
+          alt="Toyota Van"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        >
+        <div class="van-img-placeholder" style="display:none;">No Image</div>
+        <div class="van-info">
+          <p class="van-name">Toyota Van</p>
+          <div class="van-meta">
+            <span><strong>Duration:</strong> 5 days rental</span>
+            <span><strong>Pickup:</strong> May 14, 2026</span>
+            <span><strong>Return:</strong> May 19, 2026</span>
+            <span><strong>Destination:</strong> Cebu City</span>
+          </div>
+          <span class="van-badge active">Active Rental</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="card-title">History</p>
+      <div class="history-entry">
+        <img
+          class="history-img"
+          src="img/van2.jpg"
+          alt="Toyota Van"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        >
+        <div class="van-img-placeholder" style="display:none;">No Image</div>
+        <div class="history-info">
+          <p class="van-name">Toyota Van</p>
+          <p class="meta-row"><strong>Status:</strong> Returned</p>
+          <p class="meta-row"><strong>Date:</strong> Apr 10 – Apr 15, 2026</p>
+          <span class="van-badge returned">Returned</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <footer>
+        <div class="footer-inner">
+            <div>
+                <div class="footer-brand">Blakers <span>Travel &amp; Tour</span></div>
+                <p class="footer-tagline">Your trusted van rental partner.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><span class="material-symbols-outlined">call</span>+63 917 123 4567</p>
+                <p><span class="material-symbols-outlined">call</span>+63 967 867 6776</p>
+                <p><span class="material-symbols-outlined">mail</span>blakerstravel&amp;tour@gmail.com</p>
+                <p><span class="material-symbols-outlined">location_on</span>Bulacao Cebu City, Philippines</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="vanrental.html">Van Rental</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="review.html">Review</a>
+            </div>
+            <div class="footer-col">
+                <h4>Credits</h4>
+                <p>Website is designed and developed by</p>
+                <p>Blakers Team &mdash; 2026</p>
+                <p>Built for school purposes.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Blakers Travel &amp; Tour. All rights reserved.
+        </div>
+    </footer> 
+  </body>
+</html>
