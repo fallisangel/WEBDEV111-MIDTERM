@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cakes ☁️ - Cozy Puffs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="announcement">Mobile bakery based in Bulacan • Pop-up pastries • Online ordering now available</div>
+<header class="store-header">
+  <div class="header-inner">
+    <a href="index.html"><img class="logo-img" src="logo.png" alt="Cozy Puffs Logo"></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactus.html">Contact Us</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="login.html">Sign up</a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="container">
+  <div class="category-page-header">
+    <a class="btn" href="products.html">← Back to Product Sections</a>
+  </div>
+
+  <h1 class="section-title center">Cakes ☁️</h1>
+  <p class="section-subtitle center">Red velvet, carrot cake, vanilla cake, banana cake, chiffon cake, and black forest cake.</p>
+
+  <div class="product-grid">
+    
+      <div class="product-card">
+        <div class="product-img">
+          <img src="red-velvet.png" alt="Red Velvet Cake">
+        </div>
+        <div class="product-body">
+          <h3>Red Velvet Cake</h3>
+          <p class="price">₱320.00 PHP</p>
+          <button onclick="requireLoginThenProduct('red_velvet')">Add to Cart</button>
+        </div>
+      </div>
+    
+      <div class="product-card">
+        <div class="product-img">
+          <img src="carrot-cake.png" alt="Carrot Cake">
+        </div>
+        <div class="product-body">
+          <h3>Carrot Cake</h3>
+          <p class="price">₱290.00 PHP</p>
+          <button onclick="requireLoginThenProduct('carrot_cake')">Add to Cart</button>
+        </div>
+      </div>
+    
+      <div class="product-card">
+        <div class="product-img">
+          <img src="vanilla-cake.png" alt="Vanilla Cake">
+        </div>
+        <div class="product-body">
+          <h3>Vanilla Cake</h3>
+          <p class="price">₱270.00 PHP</p>
+          <button onclick="requireLoginThenProduct('vanilla_cake')">Add to Cart</button>
+        </div>
+      </div>
+    
+      <div class="product-card">
+        <div class="product-img">
+          <img src="banana-cake.png" alt="Banana Cake">
+        </div>
+        <div class="product-body">
+          <h3>Banana Cake</h3>
+          <p class="price">₱240.00 PHP</p>
+          <button onclick="requireLoginThenProduct('banana_cake')">Add to Cart</button>
+        </div>
+      </div>
+    
+      <div class="product-card">
+        <div class="product-img">
+          <img src="chiffon-cake.png" alt="Chiffon Cake">
+        </div>
+        <div class="product-body">
+          <h3>Chiffon Cake</h3>
+          <p class="price">₱260.00 PHP</p>
+          <button onclick="requireLoginThenProduct('chiffon_cake')">Add to Cart</button>
+        </div>
+      </div>
+    
+      <div class="product-card">
+        <div class="product-img">
+          <img src="black-forest.png" alt="Black Forest Cake">
+        </div>
+        <div class="product-body">
+          <h3>Black Forest Cake</h3>
+          <p class="price">₱350.00 PHP</p>
+          <button onclick="requireLoginThenProduct('black_forest')">Add to Cart</button>
+        </div>
+      </div>
+    
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

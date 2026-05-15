@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Delivery Management</title><link rel="stylesheet" href="styles.css"></head>
+<body onload="protectPage('admin')">
+<div class="admin-shell">
+<aside class="sidebar">
+  <h2>Admin</h2>
+  <a href="admin-dashboard.html">Dashboard</a>
+  <a href="admin-orders.html">Orders</a>
+  <a href="admin-delivery.html">Delivery</a>
+  <a href="admin-products.html">Products</a>
+  <a href="#" onclick="logout()">Logout</a>
+</aside>
+
+<main class="admin-content">
+  <h1>Delivery Management</h1>
+  <table>
+    <tr><th>ID</th><th>Customer</th><th>Address</th><th>Status</th><th>Action</th></tr>
+    <tr><td>D001</td><td>Maria Santos</td><td>Quezon City</td><td>On the way</td><td><button onclick="fakeAction('Delivery updated')">Update</button></td></tr>
+  </table>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

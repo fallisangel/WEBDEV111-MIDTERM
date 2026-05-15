@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Profile - Cozy Puffs</title><link rel="stylesheet" href="styles.css"></head>
+<body onload="protectPage('user')">
+
+<div class="announcement">Welcome to Cozy Puffs online ordering</div>
+<header class="store-header">
+  <div class="header-inner">
+    <a href="index.html"><img class="logo-img" src="logo.png" alt="Cozy Puffs Logo"></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactus.html">Contact Us</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="profile.html">Profile</a>
+      <a href="cart.html">Cart <span class="cart-count" id="cart-count">0</span></a>
+      <a href="#" onclick="logout()">Logout</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-wrap">
+  <div class="card">
+    <h1>User Profile</h1>
+    <input value="user@gmail.com">
+    <input value="Bulacan, Philippines">
+    <button onclick="fakeAction('Profile saved!')">Save Profile</button>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

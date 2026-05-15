@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Product Management</title><link rel="stylesheet" href="styles.css"></head>
+<body onload="protectPage('admin')">
+<div class="admin-shell">
+<aside class="sidebar">
+  <h2>Admin</h2>
+  <a href="admin-dashboard.html">Dashboard</a>
+  <a href="admin-orders.html">Orders</a>
+  <a href="admin-delivery.html">Delivery</a>
+  <a href="admin-products.html">Products</a>
+  <a href="#" onclick="logout()">Logout</a>
+</aside>
+
+<main class="admin-content">
+  <h1>Product Management</h1>
+  <div class="card" style="margin:20px 0;max-width:500px">
+    <input placeholder="Product Name">
+    <input placeholder="Price">
+    <select><option>Pastry</option><option>Bread</option><option>Cake</option></select>
+    <button onclick="fakeAction('Product added')">Add Product</button>
+  </div>
+  <table>
+    <tr><th>Product</th><th>Category</th><th>Price</th><th>Action</th></tr>
+    <tr><td>Milky Glazed Cinnamon Rolls</td><td>Pastry</td><td>₱250</td><td>Edit / Delete</td></tr>
+  </table>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

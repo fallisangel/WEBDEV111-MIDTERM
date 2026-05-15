@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Cozy Puffs</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="login-page">
+
+<div class="login-card">
+
+<img src="logo.png" class="logo-img">
+
+<h1>Welcome Back ☁️</h1>
+
+<p class="login-sub">
+Login to access your Cozy Puffs account
+</p>
+
+<div class="demo-accounts">
+<p><b>User:</b> user@gmail.com / user12345</p>
+<p><b>Admin:</b> admin@gmail.com / admin12345</p>
+<p><b>Super Admin:</b> superadmin@gmail.com / superadmin12345</p>
+</div>
+
+<input type="email" id="email" placeholder="Email Address">
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="loginNow()">Login</button>
+
+</div>
+
+</section>
+
+<script>
+function loginNow(){
+
+ const email=document.getElementById("email").value;
+ const password=document.getElementById("password").value;
+
+ if(email==="user@gmail.com" && password==="user12345"){
+   window.location.href="user-dashboard.html";
+ }
+
+ else if(email==="admin@gmail.com" && password==="admin12345"){
+   window.location.href="admin-dashboard.html";
+ }
+
+ else if(email==="superadmin@gmail.com" && password==="superadmin12345"){
+   window.location.href="super-admin-dashboard.html";
+ }
+
+ else{
+   alert("Invalid Login Credentials");
+ }
+
+}
+</script>
+
+</body>
+</html>

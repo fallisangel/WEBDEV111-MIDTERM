@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Admin Orders</title><link rel="stylesheet" href="styles.css"></head>
+<body onload="protectPage('admin')">
+<div class="admin-shell">
+<aside class="sidebar">
+  <h2>Admin</h2>
+  <a href="admin-dashboard.html">Dashboard</a>
+  <a href="admin-orders.html">Orders</a>
+  <a href="admin-delivery.html">Delivery</a>
+  <a href="admin-products.html">Products</a>
+  <a href="#" onclick="logout()">Logout</a>
+</aside>
+
+<main class="admin-content">
+  <h1>Order Management</h1>
+  <table>
+    <tr><th>ID</th><th>Customer</th><th>Total</th><th>Status</th><th>Action</th></tr>
+    <tr><td>#001</td><td>Maria Santos</td><td>₱750</td><td>Pending</td><td class="action-buttons"><button onclick="fakeAction('Order approved')">Approve</button><button onclick="fakeAction('Order preparing')">Preparing</button><button onclick="fakeAction('Order completed')">Completed</button></td></tr>
+    <tr><td>#002</td><td>Juan Cruz</td><td>₱420</td><td>Preparing</td><td class="action-buttons"><button onclick="fakeAction('Order completed')">Completed</button><button onclick="fakeAction('Order cancelled')">Cancel</button></td></tr>
+  </table>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

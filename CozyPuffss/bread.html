@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bread ☁️ - Cozy Puffs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="announcement">Mobile bakery based in Bulacan • Pop-up pastries • Online ordering now available</div>
+<header class="store-header">
+  <div class="header-inner">
+    <a href="index.html"><img class="logo-img" src="logo.png" alt="Cozy Puffs Logo"></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactus.html">Contact Us</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="login.html">Sign up</a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="container">
+  <div class="category-page-header">
+    <a class="btn" href="products.html">← Back to Product Sections</a>
+  </div>
+
+  <h1 class="section-title center">Bread ☁️</h1>
+  <p class="section-subtitle center">Milk bread, cheese roll, butter bread, ensaymada, cream cheese, and pistachio puff.</p>
+
+  <div class="product-grid">
+    
+      <div class="product-card">
+        <div class="product-img">
+          <img src="milk-bread.png" alt="Milk Bread">
+        </div>
+        <div class="product-body">
+          <h3>Milk Bread</h3>
+          <p class="price">₱120.00 PHP</p>
+          <button onclick="requireLoginThenProduct('milk_bread')">Add to Cart</button>
+        </div>
+      </div>
+    
+      <div class="product-card">
+        <div class="product-img">
+          <img src="cheese-roll.png" alt="Cheese Roll">
+        </div>
+        <div class="product-body">
+          <h3>Cheese Roll</h3>
+          <p class="price">₱95.00 PHP</p>
+          <button onclick="requireLoginThenProduct('cheese_roll')">Add to Cart</button>
+        </div>
+      </div>
+    
+      <div class="product-card">
+        <div class="product-img">
+          <img src="butter-bread.png" alt="Butter Bread">
+        </div>
+        <div class="product-body">
+          <h3>Butter Bread</h3>
+          <p class="price">₱100.00 PHP</p>
+          <button onclick="requireLoginThenProduct('butter_bread')">Add to Cart</button>
+        </div>
+      </div>
+    
+      <div class="product-card">
+        <div class="product-img">
+          <img src="ensaymada.png" alt="Ensaymada">
+        </div>
+        <div class="product-body">
+          <h3>Ensaymada</h3>
+          <p class="price">₱130.00 PHP</p>
+          <button onclick="requireLoginThenProduct('ensaymada')">Add to Cart</button>
+        </div>
+      </div>
+    
+      <div class="product-card">
+        <div class="product-img">
+          <img src="cream-cheese.png" alt="Cream Cheese">
+        </div>
+        <div class="product-body">
+          <h3>Cream Cheese</h3>
+          <p class="price">₱145.00 PHP</p>
+          <button onclick="requireLoginThenProduct('cream_cheese')">Add to Cart</button>
+        </div>
+      </div>
+    
+      <div class="product-card">
+        <div class="product-img">
+          <img src="pistachio-puff.png" alt="Pistachio Puff">
+        </div>
+        <div class="product-body">
+          <h3>Pistachio Puff</h3>
+          <p class="price">₱170.00 PHP</p>
+          <button onclick="requireLoginThenProduct('pistachio_puff')">Add to Cart</button>
+        </div>
+      </div>
+    
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

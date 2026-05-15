@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Order - Cozy Puffs</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+
+<div class="announcement">Welcome to Cozy Puffs online ordering</div>
+<header class="store-header">
+  <div class="header-inner">
+    <a href="index.html"><img class="logo-img" src="logo.png" alt="Cozy Puffs Logo"></a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactus.html">Contact Us</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="profile.html">Profile</a>
+      <a href="cart.html">Cart <span class="cart-count" id="cart-count">0</span></a>
+      <a href="#" onclick="logout()">Logout</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-wrap">
+  <div class="card">
+    <h1>Order Details</h1>
+    <input placeholder="Full Name">
+    <input placeholder="Contact Number">
+    <input placeholder="Delivery Address">
+    <select><option>GCash</option><option>Cash on Delivery</option><option>Credit Card</option></select>
+    <textarea placeholder="Order Notes"></textarea>
+    <h3 id="order-total">Total: ₱0</h3>
+    <a class="btn" href="transaction.html">Checkout</a>
+  </div>
+</section>
+<script src="script.js"></script>
+<script>displayOrderTotal();</script>
+</body>
+</html>

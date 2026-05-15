@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Make Account</title><link rel="stylesheet" href="styles.css"></head>
+<body onload="protectPage('superadmin')">
+<div class="admin-shell">
+<aside class="sidebar">
+  <h2>Super Admin</h2>
+  <a href="sales-report.html">Sales Report</a>
+  <a href="manage-accounts.html">Accounts</a>
+  <a href="make-account.html">Make Account</a>
+  <a href="remove-account.html">Remove Account</a>
+  <a href="#" onclick="logout()">Logout</a>
+</aside>
+
+<main class="admin-content">
+  <h1>Make Account</h1>
+  <div class="card" style="margin:20px 0">
+    <input placeholder="Email">
+    <input placeholder="Password">
+    <select><option>User</option><option>Admin</option><option>Super Admin</option></select>
+    <button onclick="fakeAction('Account created')">Create Account</button>
+  </div>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

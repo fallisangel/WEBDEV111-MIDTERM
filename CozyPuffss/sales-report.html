@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sales Report</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="protectPage('superadmin')">
+<div class="admin-shell">
+<aside class="sidebar">
+  <h2>Super Admin</h2>
+  <a href="sales-report.html">Sales Report</a>
+  <a href="manage-accounts.html">Accounts</a>
+  <a href="make-account.html">Make Account</a>
+  <a href="remove-account.html">Remove Account</a>
+  <a href="#" onclick="logout()">Logout</a>
+</aside>
+
+<main class="admin-content">
+  <div class="report-header">
+    <div>
+      <h1>Sales Report</h1>
+      <p>Overview of Cozy Puffs online orders and pop-up bakery sales.</p>
+    </div>
+
+    <div class="report-filter">
+      <select>
+        <option>This Month</option>
+        <option>This Week</option>
+        <option>Today</option>
+        <option>2026</option>
+      </select>
+
+      <input type="date">
+
+      <button onclick="fakeAction('Sales report exported')">Export Report</button>
+    </div>
+  </div>
+
+  <div class="report-grid">
+    <div class="report-card">
+      <span>Total Sales</span>
+      <h2>₱86,450</h2>
+      <small>+18% from last month</small>
+    </div>
+
+    <div class="report-card">
+      <span>Total Orders</span>
+      <h2>312</h2>
+      <small>+42 new orders</small>
+    </div>
+
+    <div class="report-card">
+      <span>Average Order Value</span>
+      <h2>₱277</h2>
+      <small>+6% improvement</small>
+    </div>
+
+    <div class="report-card">
+      <span>Best Seller</span>
+      <h2>156</h2>
+      <small>Cinnamon Rolls sold</small>
+    </div>
+  </div>
+
+  <div class="report-layout">
+    <div class="report-panel">
+      <h2>Monthly Sales Trend</h2>
+
+      <div class="bar-chart">
+        <div class="bar" style="height:42%"><span>Jan</span></div>
+        <div class="bar" style="height:55%"><span>Feb</span></div>
+        <div class="bar" style="height:48%"><span>Mar</span></div>
+        <div class="bar" style="height:70%"><span>Apr</span></div>
+        <div class="bar" style="height:83%"><span>May</span></div>
+        <div class="bar" style="height:95%"><span>Jun</span></div>
+      </div>
+    </div>
+
+    <div class="report-panel">
+      <h2>Top Products</h2>
+
+      <div class="best-seller">
+        <strong>Milky Glazed Cinnamon Rolls</strong>
+        <span>₱39,000</span>
+      </div>
+
+      <div class="best-seller">
+        <strong>Classic Cream Puff</strong>
+        <span>₱18,720</span>
+      </div>
+
+      <div class="best-seller">
+        <strong>Milk Cloud Bread</strong>
+        <span>₱13,800</span>
+      </div>
+
+      <div class="best-seller">
+        <strong>Blueberry Cloud Bloom</strong>
+        <span>₱11,250</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="report-panel" style="margin-top:22px">
+    <h2>Recent Transactions</h2>
+
+    <table>
+      <tr>
+        <th>Order ID</th>
+        <th>Customer</th>
+        <th>Product</th>
+        <th>Payment</th>
+        <th>Total</th>
+        <th>Status</th>
+      </tr>
+
+      <tr>
+        <td>#CP-1021</td>
+        <td>Jacky Chen</td>
+        <td>Cinnamon Rolls</td>
+        <td>GCash</td>
+        <td>₱500</td>
+        <td class="status-paid">Paid</td>
+      </tr>
+
+      <tr>
+        <td>#CP-1022</td>
+        <td>Reygan Pelayo</td>
+        <td>Milk Cloud Bread</td>
+        <td>Cash on Delivery</td>
+        <td>₱240</td>
+        <td class="status-pending">Pending</td>
+      </tr>
+
+      <tr>
+        <td>#CP-1023</td>
+        <td>Shane Concepcion</td>
+        <td>Classic Cream Puff</td>
+        <td>GCash</td>
+        <td>₱396</td>
+        <td class="status-paid">Paid</td>
+      </tr>
+
+      <tr>
+        <td>#CP-1024</td>
+        <td>Hayley Williams</td>
+        <td>Blueberry Cloud Bloom</td>
+        <td>Credit Card</td>
+        <td>₱750</td>
+        <td class="status-paid">Paid</td>
+      </tr>
+    </table>
+  </div>
+</main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
